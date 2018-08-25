@@ -43,7 +43,7 @@ class Home extends Component {
         <SearchlistDetails ser_list={ser_list} history={history} />
       ));
     } else {
-      const content = suggestions.map(suggestions => (
+      content = suggestions.map(suggestions => (
         <SearchlistItems suggestions={suggestions} history={history} />
       ));
     }

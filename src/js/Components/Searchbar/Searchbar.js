@@ -23,7 +23,7 @@ class Searchbar extends React.Component {
       <div>
         <div class="col-sm-6 Login_form">
           <h3>Contact Search</h3>
-          <form onSubmit={event => this.handleOnSubmit(event)}>
+          <form>
             <FormGroup controlId="formBasicText">
               <FormControl
                 type="text"
@@ -33,7 +33,9 @@ class Searchbar extends React.Component {
               />
               <FormControl.Feedback />
             </FormGroup>
-            <Button type="submit">Submit</Button>
+            <Button type="submit" onClick={event => this.handleOnSubmit(event)}>
+              Submit
+            </Button>
           </form>
         </div>
       </div>
